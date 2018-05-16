@@ -33,7 +33,7 @@ const search = (twitter) => {
                 follow(twitter, username)
 
                 if (!retweeted) {
-                    utils.logProcess("Retweet unsuccessful. Searching again after 10s...")
+                    utils.logProcess("Retweet unsuccessful. Trying again after 10s...")
                     setTimeout(() => search(twitter), 10000)
                 }
 
