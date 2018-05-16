@@ -27,6 +27,7 @@ export APP_CONSUMER_KEY={ twitter api consumer key }
 export APP_CONSUMER_SECRET={ twitter api consumer secret }
 export APP_ACCESS_TOKEN={ twitter api access token }
 export APP_ACCESS_SECRET={ twitter api access token secret }
+export PORT=3000
 ```
 
 ## Starting the Bot

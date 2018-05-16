@@ -12,7 +12,8 @@ const retweet = (twitter, tweet_id, text) => {
         (response) => {
             utils.logSuccess("Successfully retweeted: " + text)
             return true
-        })
+        }
+    )
 }
 
 module.exports = retweet

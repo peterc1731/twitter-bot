@@ -26,16 +26,11 @@ const search = (twitter) => {
             if (tweets.length) {
                 tweet = tweets[Math.floor(Math.random() * tweets.length)]
                 // retweet single tweet
-                const retweeted = retweet(twitter, tweet.id_str, tweet.text)
+                retweet(twitter, tweet.id_str, tweet.text)
 
                 // follow tweeter of said tweet
                 const username = tweet.retweeted_status ? tweet.retweeted_status.user.screen_name : tweet.user.screen_name
                 follow(twitter, username)
-
-                if (!retweeted) {
-                    utils.logProcess("Retweet unsuccessful. Trying again after 10s...")
-                    setTimeout(() => search(twitter), 10000)
-                }
 
             } else {
                 utils.logProcess("No appropriate tweets found. Searching again after 10s...")
