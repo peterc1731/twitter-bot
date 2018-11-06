@@ -7,9 +7,9 @@
  */
 
 module.exports = {
-    "consumerKey": process.env.APP_CONSUMER_KEY,
-    "consumerSecret": process.env.APP_CONSUMER_SECRET,
-    "accessToken": process.env.APP_ACCESS_TOKEN,
-    "accessTokenSecret": process.env.APP_ACCESS_SECRET,
-    "callBackUrl": "http://peterc1731.github.io"
-}
+  consumerKey: process.env.APP_CONSUMER_KEY,
+  consumerSecret: process.env.APP_CONSUMER_SECRET,
+  accessToken: process.env.APP_ACCESS_TOKEN,
+  accessTokenSecret: process.env.APP_ACCESS_SECRET,
+  callBackUrl: 'http://peterc1731.github.io',
+};
